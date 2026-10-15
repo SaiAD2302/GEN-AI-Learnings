@@ -1,10 +1,12 @@
-name: Deploy RNN Visualizer to GitHub Pages
+name: Deploy Learning Visualizers to GitHub Pages
 
 on:
   push:
     branches: ["main"]
     paths:
+      - "index.html"
       - "rnn-visualizer/**"
+      - "lstm-visualizer/**"
       - ".github/workflows/deploy-rnn-visualizer.yml"
   workflow_dispatch:
 
@@ -28,10 +30,10 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-      - name: Upload website artifact
+      - name: Upload complete website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: rnn-visualizer
+          path: .
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
