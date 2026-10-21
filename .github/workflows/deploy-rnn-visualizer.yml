@@ -9,6 +9,7 @@ on:
       - "lstm-visualizer/**"
       - "gru-visualizer/**"
       - "attention-visualizer/**"
+      - "transformer-visualizer/**"
       - ".github/workflows/deploy-rnn-visualizer.yml"
   workflow_dispatch:
 
