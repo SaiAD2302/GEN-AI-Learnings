@@ -10,6 +10,7 @@ on:
       - "gru-visualizer/**"
       - "attention-visualizer/**"
       - "transformer-visualizer/**"
+      - "3d-hub/**"
       - ".github/workflows/deploy-rnn-visualizer.yml"
   workflow_dispatch:
 
