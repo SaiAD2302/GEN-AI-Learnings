@@ -8,6 +8,7 @@ on:
       - "rnn-visualizer/**"
       - "lstm-visualizer/**"
       - "gru-visualizer/**"
+      - "attention-visualizer/**"
       - ".github/workflows/deploy-rnn-visualizer.yml"
   workflow_dispatch:
 
